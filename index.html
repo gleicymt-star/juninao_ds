@@ -680,8 +680,8 @@
     const nomeProduto = PRODUTOS[p.produto].nome;
     const obs = p.obs ? '\n' + WA_EMOJI.memo + ' Obs: ' + p.obs : '';
     const msgs = {
-      preparo: 'Ol\u00e1, ' + p.nome + '! '  + '\nSeu pedido #' + p.numero + ' (' + p.qty + 'x ' + nomeProduto + ') est\u00e1 sendo preparado com carinho.' + obs + '\nTe avisamos quando estiver prontinho! \u2014 ' + NOME_BARRACA + ' ' + WA_EMOJI.circo,
-      pronto:  'Ol\u00e1, ' + p.nome + '! '  + '\nSeu pedido #' + p.numero + ' (' + p.qty + 'x ' + nomeProduto + ') est\u00e1 *PRONTO*! Pode vir buscar na barraca.' + obs + '\n\u2014 ' + NOME_BARRACA + ' ' + WA_EMOJI.circo
+      preparo: 'Ol\u00e1, ' + p.nome + '! '  + '\nSeu pedido #' + p.numero + ' (' + p.qty + 'x ' + nomeProduto + ') est\u00e1 sendo preparado com carinho.' + obs + '\nTe avisamos quando estiver pronto! \u2014 ' + NOME_BARRACA + ' ' + WA_EMOJI.circo,
+      pronto:  'Ol\u00e1, ' + p.nome + '! '  + '\nSeu pedido #' + p.numero + ' (' + p.qty + 'x ' + nomeProduto + ') est\u00e1 *PRONTO!* Pode vir buscar na barraca.' + obs + '\n\u2014 ' + NOME_BARRACA + ' ' + WA_EMOJI.circo
     };
     if (!msgs[status]) return;
     const tel    = p.tel.replace(/\D/g, '');
